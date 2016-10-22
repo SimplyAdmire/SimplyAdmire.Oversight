@@ -1,6 +1,7 @@
 notifications:
   slack:
-    secure: JxIqjlGT5u86ESD2J1ADmVQUjiQw7hMyuyMRi3JiLhZAFhuqoLU5guEcaqFozqutQP1Mf2YjLgqvRx/asrTSKCDOxbE6uteaLDifjjJO9TPpTQ1rdHbQ7id5gDHAZmshwVUrKzZHdaAM49qIo5UxPsu22JQiPH8qJeYUOqH73Lu6iWN8Q532vpiNvt5neXsQZB+24xB7wjiwDUGUQWu4xzYUGKNFkNLoomPQ4xdnInGbUIKIbXYkMOmWy+HzrYlYnJqZ0ZCWPAsUnUd7R5pwCnPn/j+89r1FVfahm4hFEjtPRbgiw0rhxlljSys1MWRxRAg4skeow6LWPsQSg5xsjWXiavwqFcArli/GGVn7OJx8DvGnvyED8U+bVQMQnEcAIvT74UaoLPWNnkws3fVZjSWoYv31ZcEjalKtKYFnFEThzM7o5Ub+MCKO3521L8OmSlWKHjcH20GJ1Pq0PsV67SO832Dd0DoYdDX2wAW/Kz/aHkFii1pJxPDKST/DLEC99wQYgaGTgqxMsm6LrRPa4kuvYEedHvdEiY4k+zPwDx2G5kuYa6g98VKHx8vc9PYGeyTEW1mBdaZv5SIzlX3MtUqOw6brzWNn+1+HKOmpFrP+oUoNlD8AXLPbDFzg2uqxeUUdxnlTeWg6seS/C37cVp5k50qg3om07iZ/K+D/4dc=language: php
+    secure: K1XPQSE3k/OvUVEuX3+NZkts0DUJlIe8QdM9oJcDtaWrWZoBa/RIhQQKUETb919mKELXOELOlCPatmHAN8rUbBDDfBXV6HSHkhLo/udLaZBCMqVUG3pxzn54ENTK2LN20NpvTTUpgpS9CCazB8n9eBDnFkHgmL7YA4OF5dkEF3xsepO4X90vnt53FXOXzSdmlG2qYFPbSQbbe0dEfp+2RCSMalkojeQ/aB52R6E10ja35UvZlI5R4W1qWFbQvn5yg1i5ZNzaOwUC8ISrZChZmFC3xrNv5SW08GFpmDtlsqZw0lQpbPk9XP0woIxw8NOmvtEaCMQOWOhA2Ugl1B2c+W7YEwgab8xa3WhKLx6NYeIYOX389p2ctjdOC3KBttNZV4eMFmlZ7kbEQOaN0Sgxo69IuBf/9g5ChdchHUWkZ1KZbF5L9BO7VDsz0EKn8RV8g+mkM6+az9lUvXnnGTujPJSASV+nPa5f52tkMgfHr3vaimdN6vo6+a4hYO8qI5yKtMrM+m3a8ZJesOyw519ZgJsOF7LGcBUZGIS38PQxgsQH3KsZT/VMxQbuNLK2urh0Q1y/eoaH91rJg7Oc5dkCItZ5fjiggX7M9z3Sx5iJc8pvo/0qBcOvjHA1kZlVVJ0+Ut2uqUDYFV6oQz2ZMGV926kLj3qNG3mFBKqd+8TS8hc=
+language: php
 php:
   - 5.6
   - 7.0
@@ -14,7 +15,5 @@ before_install:
 install:
   - mv ../SimplyAdmire.Oversight Packages/Application
 script:
-  - bin/phpunit -c Packages/Application/BJD.Events/UnitTests.xml
+  - bin/phpunit -c Packages/Application/SimplyAdmire.Oversight/UnitTests.xml
   - bin/phpunit --stop-on-failure -c Packages/Application/SimplyAdmire.Oversight/UnitTests.xml --testsuite "SimplyAdmire.Oversight tests"
-  - cd Packages/Application/SimplyAdmire.Oversight
-  - ../../../bin/test-reporter
