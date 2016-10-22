@@ -1,0 +1,21 @@
+#notifications:
+#  slack:
+#    secure:
+language: php
+php:
+  - 5.6
+  - 7.0
+before_install:
+  - cd ..
+  - git clone https://github.com/neos/flow-base-distribution.git
+  - cd flow-base-distribution
+  - git checkout 3.3.4
+  - composer update --dev
+  - composer require codeclimate/php-test-reporter:dev-master --dev
+install:
+  - mv ../SimplyAdmire.Oversight Packages/Application
+script:
+  - bin/phpunit -c Packages/Application/BJD.Events/UnitTests.xml
+  - bin/phpunit --stop-on-failure -c Packages/Application/SimplyAdmire.Oversight/UnitTests.xml --testsuite "SimplyAdmire.Oversight tests"
+  - cd Packages/Application/SimplyAdmire.Oversight
+  - ../../../bin/test-reporter

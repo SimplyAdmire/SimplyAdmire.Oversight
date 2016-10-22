@@ -1,5 +1,5 @@
 {
-    "description": "Add description here",
+    "description": "Flow package to handle your company's administration",
     "type": "neos-package",
     "require": {
         "typo3/flow": "*"
