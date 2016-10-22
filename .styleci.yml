@@ -5,3 +5,9 @@ linting: true
 enabled:
   - concat_with_spaces
   - no_blank_lines_before_namespace
+
+finder:
+  exclude:
+    - "Tests"
+  not-name:
+    - "*Test.php"

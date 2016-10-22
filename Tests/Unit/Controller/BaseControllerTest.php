@@ -13,5 +13,4 @@ class BaseControllerTest extends BaseTestCase
     {
         $this->assertEquals(1, 1);
     }
-
 }
