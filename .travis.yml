@@ -1,7 +1,6 @@
-#notifications:
-#  slack:
-#    secure:
-language: php
+notifications:
+  slack:
+    secure: JxIqjlGT5u86ESD2J1ADmVQUjiQw7hMyuyMRi3JiLhZAFhuqoLU5guEcaqFozqutQP1Mf2YjLgqvRx/asrTSKCDOxbE6uteaLDifjjJO9TPpTQ1rdHbQ7id5gDHAZmshwVUrKzZHdaAM49qIo5UxPsu22JQiPH8qJeYUOqH73Lu6iWN8Q532vpiNvt5neXsQZB+24xB7wjiwDUGUQWu4xzYUGKNFkNLoomPQ4xdnInGbUIKIbXYkMOmWy+HzrYlYnJqZ0ZCWPAsUnUd7R5pwCnPn/j+89r1FVfahm4hFEjtPRbgiw0rhxlljSys1MWRxRAg4skeow6LWPsQSg5xsjWXiavwqFcArli/GGVn7OJx8DvGnvyED8U+bVQMQnEcAIvT74UaoLPWNnkws3fVZjSWoYv31ZcEjalKtKYFnFEThzM7o5Ub+MCKO3521L8OmSlWKHjcH20GJ1Pq0PsV67SO832Dd0DoYdDX2wAW/Kz/aHkFii1pJxPDKST/DLEC99wQYgaGTgqxMsm6LrRPa4kuvYEedHvdEiY4k+zPwDx2G5kuYa6g98VKHx8vc9PYGeyTEW1mBdaZv5SIzlX3MtUqOw6brzWNn+1+HKOmpFrP+oUoNlD8AXLPbDFzg2uqxeUUdxnlTeWg6seS/C37cVp5k50qg3om07iZ/K+D/4dc=language: php
 php:
   - 5.6
   - 7.0
