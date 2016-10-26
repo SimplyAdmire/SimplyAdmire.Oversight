@@ -1,0 +1,14 @@
+---
+
+##
+# Default route with just the package
+
+-
+  name: 'default with package'
+  uriPattern: ''
+  defaults:
+    '@package':    'SimplyAdmire.Oversight'
+    '@controller': 'Standard'
+    '@action':     'index'
+    '@format':     'html'
+  appendExceedingArguments: true
