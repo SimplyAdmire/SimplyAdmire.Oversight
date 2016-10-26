@@ -1,0 +1,27 @@
+{
+  "name": "SimplyAdmire.Oversight",
+  "version": "0.0.1",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-batch": "^1.0.5",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1",
+    "materialize-css": "^0.97.7",
+    "node-sass": "^3.10.1",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
